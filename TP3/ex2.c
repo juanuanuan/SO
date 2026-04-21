@@ -16,7 +16,7 @@ int main(int argc, char **argv){
         execlp("ls","ls", "-l", NULL);
     } 
 
-    if(wait(NULL) == -1){
+    else if(wait(NULL) == -1){
         return -1;
     }
 
