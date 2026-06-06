@@ -13,7 +13,7 @@ int main(int argc, char **argv){
     if((pid = fork()) < 0) return -1;
 
     if(pid == 0){
-        execlp("ls","ls", "-l", NULL);
+        execlp("ls","program.hs", "-l", NULL);
     } 
 
     else if(wait(NULL) == -1){

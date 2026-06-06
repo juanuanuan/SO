@@ -29,19 +29,17 @@ int main(int argc, char **argv){
         int second;
         sleep(5);
         write(fd[1], &second, sizeof(int));
-        fprintf(stdout, "Im the parent process, with id: %d, and im writing %d", getpid(), second);
+        fprintf(stdout, "Im the parent process, with id: %d, and im writing %d\n", getpid(), second);
         close(fd[1]);
         wait(NULL);
     } else {
         close(fd[1]);
         int first;
         read(fd[0], &first, sizeof(int));
-        fprintf(stdout, "Im am the child process, with id: %d and im reading %d", getpid(), first);
+        fprintf(stdout, "Im am the child process, with id: %d and im reading %d\n", getpid(), first);
         close(fd[0]);
     } 
-    
-    
-    
+     
     return 0;
 
 
