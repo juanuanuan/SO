@@ -1,0 +1,12 @@
+-la
+bin
+Client
+Controller.c
+lib.h
+makefile
+Runner.c
+Server
+src
+temp
+Command has been sent: ls
+Run time of: 14 milliseconds.
