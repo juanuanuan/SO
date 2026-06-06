@@ -1,0 +1,5 @@
+lista.txt
+listors.txt
+listors2.txt
+resultado.txt
+testes.txt

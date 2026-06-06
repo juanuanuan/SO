@@ -1,0 +1,14 @@
+-la
+bin
+Client
+Controller.c
+lib.h
+lista.txt
+listors.txt
+listors2.txt
+makefile
+resultado.txt
+Runner.c
+Server
+src
+temp
