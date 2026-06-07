@@ -12,7 +12,7 @@ O cliente (**Runner**) envia pedidos de execução ao servidor (**Controller**),
 - Gestão de fila de espera com limite configurável (`MAX_QUEUE`)
 - Controlo do nível de paralelismo (`MAX_PARALLEL`)
 - Comandos especiais: `-status` e `-exit`
-- Reporte do tempo de execução ao servidor
+- Notificação do tempo de execução da tarefa ao servidor
 ---
  
 ## Como Utilizar
