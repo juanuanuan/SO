@@ -31,3 +31,17 @@ typedef struct {
 
 #endif
 
+
+// Controller 
+
+int enqueue(Queue *q, Programa new_task, int pipe_write_end);
+int dequeue(Queue *queue, pid_t finished_pid, int pipe_write_end);
+int process(int pipe_write_end, int pipe_read_end);
+int manager(int pipe_read_end, Queue *queue, int pipe_write_end);
+
+// Runner
+
+void parser(char *command, char **argv, char **file_in, char **file_out, char **file_err);
+void cutpipe(char *command, char **argv, int *argc);
+void executer(char *command);
+int dispatch(int argc, char **argv);
